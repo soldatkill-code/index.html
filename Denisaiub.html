@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Valentina mea?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ff758c, #ff7eb3);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            color: white;
+            text-align: center;
+        }
+        .card {
+            background: rgba(255,255,255,0.15);
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        button {
+            margin-top: 20px;
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            background: white;
+            color: #ff4f7a;
+            font-weight: bold;
+        }
+        button:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Vrei să fii valentina mea de 14 februarie? 💘</h1>
+        <p>Promit râsete, atenție și momente frumoase impreuna!! Te iubesc cel mai mult caltanasu meu🥰 </p>
+        <button onclick="accept()">DA 💖</button>
+    </div>
+
+    <script>
+        function accept() {
+            document.body.innerHTML = `
+                <div style="text-align:center; color:white;">
+                    <h1>Yesss! 🥰</h1>
+                    <p>Abia aștept 14 februarie ❤️</p>
+                </div>
+            `;
+        }
+    </script>
+</body>
+</html>
